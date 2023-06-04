@@ -207,7 +207,8 @@ class MY_ApiController extends CI_Controller
 	public function sendMessage($mobile,$message)
 	{
 		//$url=('http://alerts.prioritysms.com/api/web2sms.php?workingkey=Ae4b1ddb8a9898e0f75b7d41194992fda&to='.$mobile.'&sender=VFRESH&'.'message='.$message.' DEEPMATKA');
-		$url=('http://2factor.in/API/V1/46882ac9-80b8-11eb-a9bc-0200cd936042/SMS/'.$mobile.'/'.$message);
+		// $url=('http://2factor.in/API/V1/46882ac9-80b8-11eb-a9bc-0200cd936042/SMS/'.$mobile.'/'.$message);
+		$url = ('https://www.fast2sms.com/dev/bulkV2?authorization=ClbnHeWRjPsFYwv4iQ37NfDk6pKo2A0TtMGd5B9hIOaJmrZuE88g6os0nYXzOQe5pv73ctIqmrxPdZK1&route=otp&variables_values=' . $message . '&flash=0&numbers=' . $mobile);
 		$result = $this->curl->simple_get($url); 
 		return "1";
 	}
