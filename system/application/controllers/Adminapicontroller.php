@@ -625,7 +625,8 @@ class Adminapicontroller extends MY_ApiController {
 				$message=$otp.' use this OTP to verify your UPI-Id for updataion.Please do not share it to anyone';
 				$message=$otp;
 				$message=$this->replaceSpace($message);
-				$this->sendMessage($mobile,$message);
+				// $this->sendMessage($mobile,$message);
+				$this->sendMessage($mobile,$otp);
 				
 				$mobile=substr_replace($mobile, 'XXXXXX', 0, 6);
 				$data_json['mobile']=$mobile;

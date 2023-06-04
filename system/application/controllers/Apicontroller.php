@@ -105,7 +105,8 @@ class Apicontroller extends MY_ApiController {
 					$message=$otp.' use this to complete your registration .Please do not share it to anyone';
 					$message=$otp;
 					$message=$this->replaceSpace($message);
-					$this->sendMessage($mobile,$message);
+					// $this->sendMessage($mobile,$message);
+					$this->sendMessage($mobile,$otp);
 				}
 				$data_json['otp']=$otp;
 				$data_json['msg'] = "Mobile number is not registered";
@@ -150,7 +151,8 @@ class Apicontroller extends MY_ApiController {
 					
 					$message=$otp;
 					$message=$this->replaceSpace($message);
-					$this->sendMessage($mobile,$message);
+					// $this->sendMessage($mobile,$message);
+					$this->sendMessage($mobile,$otp);
 				}
 				$data_json['otp']=$otp;
 				$data_json['msg'] = "Success";
@@ -233,7 +235,8 @@ class Apicontroller extends MY_ApiController {
 				$message=$otp;
 				$message=$otp.' use this to complete your registration .Please do not share it to anyone';
 				$message=$this->replaceSpace($message);
-				$this->sendMessage($mobile,$message);
+				// $this->sendMessage($mobile,$message);
+				$this->sendMessage($mobile,$otp);
 			}
 			
 			$data_json['otp']=$otp;
@@ -263,7 +266,8 @@ class Apicontroller extends MY_ApiController {
 				$message=$otp.' use this to complete your registration .Please do not share it to anyone';
 				$message=$otp;
 				$message=$this->replaceSpace($message);
-				$this->sendMessage($mobile,$message);
+				// $this->sendMessage($mobile,$message);
+				$this->sendMessage($mobile,$otp);
 			}
 			
 			$data_json['msg']='Otp Re-Sent';
@@ -577,7 +581,8 @@ class Apicontroller extends MY_ApiController {
 					$message=$otp.' use this OTP to change your password.Please do not share it to anyone';
 					$message=$otp;
 					$message=$this->replaceSpace($message);
-					$this->sendMessage($mobile,$message);
+					// $this->sendMessage($mobile,$message);
+					$this->sendMessage($mobile,$otp);
 				}
 				$data_json['otp']=$otp;
 				$data_json['msg'] = "Mobile number is registered. Try Login.";
