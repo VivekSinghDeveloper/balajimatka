@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box
+}
+.yellow{
+    background: yellow;
+    padding: 20px;
+}
+.white{
+    background: #fff; 
+    padding: 36px;  
+}
+.logo{
+    width: 100%;
+}
+.main{
+    border: 1px solid black;
+    border-radius: 10px;   
+}
+.star{
+    width: 70%;
+}
+.headstar{
+    padding-left: 20px;
+    position: absolute;
+    bottom: 25%;
+    left: 32%;    
+}
+.peragraph, .images, .head{
+    padding: 20px;
+}
+.mb-img{
+    width: 90%;
+}
+.sub_had{
+    color: green;
+    margin: 0;
+}
+.button{
+    border-radius: 20px;
+}
+.appname{
+    align-items: center;
+    
+}
+.sub_head{
+    position: relative;
+}
+.sub_head_icon{
+    position:absolute;
+    right: 0;
+}
+.top_box{
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .headstar {
+        padding-left: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 25px;
+    }
+
+    .uk-slider-items>*{
+        width: 80px !important;
+    }
+    .mb-img {
+        width: 72px;
+    }    
+}
