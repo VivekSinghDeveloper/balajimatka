@@ -18,7 +18,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 ">
+                <div class="col-xl-12 " style="text-align: center;">
                     <h2 class="text-center">Data Deletion Request</h2>
                     <p>For data deletion or update please contact us <a href="mailto:delete@matkabalaji.com">delete@matkabalaji.com</a></p>
                 </div>
