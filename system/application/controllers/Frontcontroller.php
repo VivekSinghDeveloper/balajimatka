@@ -43,7 +43,7 @@ class Frontcontroller extends MY_Controller {
 	public function dataDeletion()
 	{
 		$this->data['title'] ='Data Deletion Request';
-		$this->load->view('front/privacy',$this->data);
+		$this->load->view('front/deletion',$this->data);
 	}
 	
 }
