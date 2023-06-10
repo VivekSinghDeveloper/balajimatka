@@ -7,6 +7,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
    $route['default_controller'] = 'Frontcontroller';
    $route['privacy-policy'] = 'Frontcontroller/privacyPolicy';
+   $route['data-deletion'] = 'Frontcontroller/dataDeletion';
  /*$route['privacy-policy'] = "Ccontroller/privacyPolicy";*/
 /* $route['game-result-chart/(:any)'] = "Ccontroller/viewchart"; 
 $route['submit-user-query'] = 'Ccontroller/submitUserQuery';

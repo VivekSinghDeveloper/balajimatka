@@ -39,5 +39,11 @@ class Frontcontroller extends MY_Controller {
 		$this->data['title'] ='Welcome To Kalyan Super Matka';
 		$this->load->view('front/privacy',$this->data);
 	}
+
+	public function dataDeletion()
+	{
+		$this->data['title'] ='Data Deletion Request';
+		$this->load->view('front/privacy',$this->data);
+	}
 	
 }
